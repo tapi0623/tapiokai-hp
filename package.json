@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,8 +13,11 @@
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
     "@nextui-org/button": "^2.0.31",
+    "@nextui-org/card": "^2.0.28",
+    "@nextui-org/divider": "^2.0.27",
     "@nextui-org/link": "^2.0.29",
     "@nextui-org/navbar": "^2.0.30",
+    "@nextui-org/spacer": "^2.0.27",
     "@nextui-org/system": "2.1.0",
     "@nextui-org/theme": "2.2.0",
     "@react-aria/ssr": "^3.9.2",
