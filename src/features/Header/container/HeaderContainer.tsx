@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navb
 import NextImage from "next/image";
 import tapiocaIcon from "@/../public/tapioca_mono.png";
 import { Spacer } from "@nextui-org/spacer";
+import Image from "next/image";
 
 export function HeaderContainer() {
   return (
@@ -19,7 +20,7 @@ export function HeaderContainer() {
         <NavbarContent justify="end">
           <NavbarItem>
             <Link color="foreground" href="https://komenezumi.net">
-              Komenezumi.net
+              <Image src="https://komenezumi.net/banner/komenezumi.gif" alt="komenezumi.netへのリンク" height={50} width={200} />
             </Link>
           </NavbarItem>
         </NavbarContent>
