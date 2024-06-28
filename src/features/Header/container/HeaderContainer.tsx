@@ -30,6 +30,11 @@ export function HeaderContainer() {
               Sign Up
             </Button>
           </NavbarItem>
+          <NavbarItem>
+            <Button as={Link} color="primary" href="/live" variant="flat">
+              Live
+            </Button>
+          </NavbarItem>
         </NavbarContent>
       </Navbar>
       <Spacer y={5} />
