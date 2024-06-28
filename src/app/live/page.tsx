@@ -1,4 +1,4 @@
-export function Page() {
+export default function Page() {
   return (
     <iframe
       src="https://localhost:8080/embed/video"
