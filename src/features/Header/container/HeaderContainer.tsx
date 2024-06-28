@@ -1,5 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
+import NextLink from "next/link";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import NextImage from "next/image";
 import tapiocaIcon from "@/../public/tapioca_mono.png";
@@ -19,9 +20,16 @@ export function HeaderContainer() {
         </NavbarBrand>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Link color="foreground" href="https://komenezumi.net">
-              <Image src="https://komenezumi.net/banner/komenezumi.gif" alt="komenezumi.netへのリンク" height={50} width={200} />
-            </Link>
+            <NextLink href="https://komenezumi.net">
+              <Link color="foreground">
+                <Image
+                  src="https://komenezumi.net/banner/komenezumi.gif"
+                  alt="komenezumi.netへのリンク"
+                  height={50}
+                  width={200}
+                />
+              </Link>
+            </NextLink>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
@@ -31,7 +39,7 @@ export function HeaderContainer() {
             </Button>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="/live" variant="flat">
+            <Button as={Link} color="primary" isExternal href="/live" variant="flat">
               Live
             </Button>
           </NavbarItem>
