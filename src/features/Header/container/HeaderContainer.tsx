@@ -34,13 +34,18 @@ export function HeaderContainer() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
-              Sign Up
+            <Button as={Link} color="primary" isExternal href="/live" variant="flat">
+              Live
             </Button>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" isExternal href="/live" variant="flat">
-              Live
+            <Button as={Link} color="primary" isExternal href="/status" variant="flat">
+              Status
+            </Button>
+          </NavbarItem>
+          <NavbarItem>
+            <Button as={Link} color="primary" href="#" variant="flat">
+              Sign Up
             </Button>
           </NavbarItem>
         </NavbarContent>
