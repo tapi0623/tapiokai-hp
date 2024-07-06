@@ -54,6 +54,7 @@
     "@storybook/test": "^8.0.9",
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.2.5",
+    "prisma": "^5.16.1",
     "storybook": "^8.0.9"
   },
   "eslintConfig": {
