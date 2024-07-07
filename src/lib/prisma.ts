@@ -7,7 +7,7 @@ declare global {
   var prisma: PrismaClient;
 }
 
-let prisma;
+let prisma: PrismaClient;
 
 /**
  * 環境に応じてPrismaClientのインスタンスを作成します。
