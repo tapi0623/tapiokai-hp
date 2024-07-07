@@ -1,19 +1,17 @@
 "use server";
 
 import prisma from "@/lib/prisma";
+import { z } from "zod";
 
-interface CreatePostReq {
-  title: string;
-  content: string;
-  thumbnail_path: string;
-}
-
-export async function CreatePost(req: CreatePostReq) {
+export async function CreatePost(data: FormData) {
+  const title = data.get("title");
+  const content = data.get("content");
+  const thumbnail_path = data.get("thumbnail_path");
   await prisma.post.create({
     data: {
-      title: req.title,
-      content: req.content,
-      thumbnail_path: req.thumbnail_path,
+      title,
+      content,
+      thumbnail_path,
     },
   });
 }
