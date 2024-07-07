@@ -2914,6 +2914,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^5.16.1":
+  version: 5.16.1
+  resolution: "@prisma/client@npm:5.16.1"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 10c0/4d1e140db1e0654564c9864d7b9e9f3dafe0794c7f86d6d7d9e25c51158f855f22d6e4c5e2ff13a15e3171b3bf9c9a8d3306bdd96f26dc8c87b3501e42a9d7ab
+  languageName: node
+  linkType: hard
+
 "@prisma/debug@npm:5.16.1":
   version: 5.16.1
   resolution: "@prisma/debug@npm:5.16.1"
@@ -10728,6 +10740,7 @@ __metadata:
     "@nextui-org/system": "npm:2.1.0"
     "@nextui-org/table": "npm:^2.0.36"
     "@nextui-org/theme": "npm:2.2.0"
+    "@prisma/client": "npm:^5.16.1"
     "@react-aria/ssr": "npm:^3.9.2"
     "@react-aria/visually-hidden": "npm:^3.8.10"
     "@storybook/addon-essentials": "npm:^8.0.9"
