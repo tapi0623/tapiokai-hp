@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
@@ -7,7 +6,7 @@ import clsx from "clsx";
 
 import { HeaderContainer } from "@/features/Header/container/HeaderContainer";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 };
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },

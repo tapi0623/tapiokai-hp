@@ -3,17 +3,23 @@
 import prisma from "@/lib/prisma";
 import { z } from "zod";
 
-export async function CreatePost(data: FormData) {
+export async function createPost(data: FormData) {
   const title = data.get("title");
   const content = data.get("content");
   const thumbnail_path = data.get("thumbnail_path");
-  await prisma.post.create({
-    data: {
-      title,
-      content,
-      thumbnail_path,
-    },
-  });
+
+  // 型を明示し、null チェックを行う
+  if (typeof title === "string" && typeof content === "string" && typeof thumbnail_path === "string") {
+    await prisma.post.create({
+      data: {
+        title,
+        content,
+        thumbnail_path,
+      },
+    });
+  } else {
+    throw new Error("Invalid form data");
+  }
 }
 
 interface ReadPostReq {
@@ -23,7 +29,7 @@ interface ReadPostReq {
 export async function ReadPost(req: ReadPostReq) {
   const res = await prisma.post.findUnique({
     where: {
-      id: 1,
+      id: req.id, // IDを動的に取得するように修正
     },
   });
   return res;
