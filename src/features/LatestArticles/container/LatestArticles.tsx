@@ -1,7 +1,7 @@
 import { ArticleCard } from "@/features/LatestArticles/presenter";
 import { Divider } from "@nextui-org/divider";
 import hakoneImage from "@/../public/hakone.png";
-import teikokuImage from "@/../public/teikoku.png";
+import zaohImage from "@/../public/zaoh.png"
 export function LatestArticles() {
   return (
     <>
@@ -22,7 +22,7 @@ export function LatestArticles() {
           <ArticleCard genre="旅行記" title="箱根を歩く" alt="箱根を歩く" src={hakoneImage} />
         </div>
         <div>
-          <ArticleCard genre="戦記" title="帝國陸軍、ミッドウェーで大勝" alt="ミッドウェー対象" src={teikokuImage} />
+          <ArticleCard genre="旅行記" title="12月の蔵王" alt="蔵王スキー紀" src={zaohImage} />
         </div>
       </div>
     </>
